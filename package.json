@@ -41,13 +41,11 @@
     "vue-tsc": "^1.8.25"
   },
   "lint-staged": {
-    "*.{vue,js}": [
-      "pnpm lint"
+    "*.{js,vue,jsx,tsx}": [
+      "pnpm lint",
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
