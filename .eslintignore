@@ -1,0 +1,17 @@
+node_modules
+dist
+pnpm-lock.yaml
+CHANGELOG.md
+coverage
+*.js
+*.css
+playground
+site
+
+packages
+github
+script
+typings
+
+commitlint.config.js
+# !.*
