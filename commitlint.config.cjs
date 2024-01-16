@@ -9,7 +9,6 @@ module.exports = {
         [
           "feat", // 增加新功能
           "fix", // 修复 bug
-          "add", // 增加代码逻辑
           "del", // 删除功能
           "update", // 更新功能
           "docs", // 文档相关的改动
@@ -31,7 +30,7 @@ module.exports = {
         rules: {
           "commit-rule": ({ raw }) => {
             return [
-              /^\[(feat|fix|add|del|update|docs|style|build|refactor|revert|test|perf|chore)].+/g.test(raw),
+              /^\[(feat|fix|del|update|docs|style|build|refactor|revert|test|perf|chore)].+/g.test(raw),
               `commit备注信息格式错误，格式为 <[type] 修改内容>，type支持${types.join(",")}`,
             ];
           },

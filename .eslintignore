@@ -10,4 +10,5 @@ script
 typings
 
 commitlint.config.cjs
+.cz-config.js
 # !.*

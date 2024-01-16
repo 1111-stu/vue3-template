@@ -11,7 +11,8 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix .gitignore",
     "format": "prettier --write src/",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
     "@vue/eslint-config-typescript": "^12.0.0",
@@ -29,6 +30,8 @@
     "@vitejs/plugin-vue": "^4.5.2",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/tsconfig": "^0.5.0",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-vue": "^9.17.0",
@@ -47,5 +50,13 @@
       "eslint --cache --fix",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.cjs"
+    }
   }
 }
