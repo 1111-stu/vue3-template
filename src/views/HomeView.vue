@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import PiniaSetup from '@components/PiniaSetup.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <PiniaSetup />
   </main>
 </template>
